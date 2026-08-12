@@ -1,0 +1,10 @@
+!#/bin/zsh
+
+HOME="./../Users/$USERNAME"
+ZDOTDIR="./../Users/$USERNAME"
+cd ~/
+~/.zshrc
+echo "$PROMPT"
+zsh -f
+
+exit
