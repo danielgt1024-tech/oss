@@ -1,0 +1,10 @@
+#!/bin/zsh
+
+eval_bool() {
+  # Store the bracket type ($1) and shift it out of the arguments list
+  local bracket=$1
+  shift
+
+  # Dynamically evaluate the remaining arguments wrapped inside the brackets
+  eval "$bracket $argv $bracket"
+}
